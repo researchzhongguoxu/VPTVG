@@ -1,0 +1,2 @@
+"""Intermediate artifact storage placeholder."""
+

@@ -1,0 +1,2 @@
+"""External service adapter package."""
+

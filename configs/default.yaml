@@ -1,0 +1,18 @@
+vision_parser:
+  spr_generator:
+    mode: deterministic_mock
+    model: qwen3.6-plus
+    base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+    timeout_seconds: 60
+    max_retries: 2
+
+llm:
+  vision_default:
+    provider: qwen
+    model: qwen3.6-plus
+    role: vision_parser_spr_generation
+  language_default:
+    provider: deepseek
+    model: deepseek-v4-pro
+    base_url: https://api.deepseek.com
+    role: solver_planning_and_downstream_language_tasks
